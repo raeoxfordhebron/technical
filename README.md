@@ -49,6 +49,12 @@ git push origin --delete feature-branch
 
 Now, your feature has been incorporated! Feature branching is incredibly important for developers, especially during collaboration. The process requires communication and review, which is beneficial for the health of the code. Branching helps produce new features and fix bugs.
 
+### 5. Technical Book/Blog
+
+I chose a technical blog that was shared by my instructor in General Assembly that I had bookmarked to go back to at some point. I read [this](https://www.builder.io/blog/console-log#tip-4-use-console-dir-for-functions-amp-dom-elements) article that introduces syntax tricks to help with logging and debugging. Many of them were small tweaks that would be easy to incorporate into everyday use. When I was in General Assembly, an instructor reitereated "When in doubt, log it out." This reinforces that the default is to use console.log() to debug. While beneficial itself, there are options that provide more information that just take similar repitition to learn. 
+
+The article suggests tips in a numbered list. Instead of logging variables as is, we can wrap them in an object. When you view the terminal and compare the two, the difference is mostly visual. The values are more separated and directly correlated to their key, which saves you the brain space or time to look at the variable names to remember. It's really interesting that a lot of these suggestions are simply visual changes . The next tip utilizes an object to wrap around the variables and adds a prefix so you can search your terminal for that specific keyword. If you've got a bunch of objects, the article proposes you use console.table() instead of console.log() because it sets up the output in a table that makes it easily comparable. Number 4 is the only tip that doesn't result in time saved, but provides more information. With functions and DOM elements, you can use console.dir() to give you details about the properties. Finally, they give you the resource to utilize CSS in your console.
+
 
 
 
