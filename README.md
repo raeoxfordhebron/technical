@@ -4,7 +4,7 @@
 
 2.
 
-3. git commit -m "second commit"
+3. git commit -m "second commit" <br>
    git checkout -b "feature-branch"
    git commit -m "awesome feature"
    git checkout main
