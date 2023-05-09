@@ -41,6 +41,13 @@ After you do some work on that branch and push it back to the repo, you can comp
 git checkout main
 git merge feature-branch
 ```
+To clean things up, we will delete the feature branch since it has been merged into the main branch.
+```
+git branch -d feature-branch
+git push origin --delete feature-branch
+```
+
+Now, your feature has been incorporated! Feature branching is incredibly important for developers, especially during collaboration. The process requires communication and review, which is beneficial for the health of the code. Branching helps produce new features and fix bugs.
 
 
 
