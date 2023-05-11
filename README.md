@@ -4,6 +4,8 @@
 
 ## 2.
 
+I would check the HTTP requests on the Network tab in Dev Tools to see if there are requests pending or failed. This has been really useful information in troubleshooting for me. 
+
 ## 3. 
  
    git add . <br>
