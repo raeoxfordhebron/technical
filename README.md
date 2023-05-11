@@ -6,8 +6,8 @@
 
 ## 3. 
  
-   git add .
-   git commit -m "first commit"
+   git add . <br>
+   git commit -m "first commit" <br>
    git commit -m "second commit" <br>
    git checkout -b "feature-branch" <br>
    git commit -m "awesome feature" <br>
