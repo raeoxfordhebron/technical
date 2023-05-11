@@ -4,6 +4,7 @@
 
 ## 2.
 
+Code bloat in CSS, not having a mobile-first design. The media queries could slow it down.
 I would check the HTTP requests on the Network tab in Dev Tools to see if there are requests pending or failed. This has been really useful information in troubleshooting for me. 
 
 ## 3. 
