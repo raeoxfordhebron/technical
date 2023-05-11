@@ -5,10 +5,9 @@
 ## 2.
 
 ## 3. 
-
- <Sam notes >
-   Add something about making edits and `git add file` before the commits? 
- </Sam notes >  
+ 
+   git add .
+   git commit -m "first commit"
    git commit -m "second commit" <br>
    git checkout -b "feature-branch" <br>
    git commit -m "awesome feature" <br>
