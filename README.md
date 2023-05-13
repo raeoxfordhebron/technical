@@ -5,8 +5,8 @@
 ## 2.
 Slow code processing through Javascript or CSS (code bloat in media queries), especially if the website does not have a mobile-first design.
 
+The first thing I would do to troubleshoot is to check the HTTP requests on the Network tab in Dev Tools to see if there are requests pending or failed. This has been the most common cause of delays in my experience working with web applications. There may be too many HTTP requests causing slowness on the load times. There's a possibility that the components running on a single Linux box could cause slowness. With a relational database, run times can be longer without indexing. 
 
-The first thing I would do to troubleshoot is to check the HTTP requests on the Network tab in Dev Tools to see if there are requests pending or failed. This has been my most commonly used method of troubleshooting in my own work. I would look in the existing tickets and docs to see if there is anything related to this problem.
 ## 3. 
  
    git add . <br>
@@ -61,7 +61,7 @@ I chose a technical blog that was shared by my instructor in General Assembly th
 
 The article suggests tips in a numbered list. Instead of logging variables as is, we can wrap them in an object. When you view the terminal and compare the two, the difference is mostly visual. The values are more separated and directly correlated to their key, which saves you the brain space or time to look at the variable names to remember. It's really interesting that a lot of these suggestions are simply visual changes. The next tip utilizes an object to wrap around the variables and adds a prefix so you can search your terminal for that specific keyword. If you've got a bunch of objects, the article proposes you use console.table() instead of console.log() because it sets up the output in a table that makes it easily comparable. Number 4 is the only tip that doesn't result in time saved, but provides more information. With functions and DOM elements, you can use console.dir() to give you details about the properties. Finally, they give you the resource to utilize CSS in your console.
 
-While I don't think I'm going to be adding CSS to my console, I love that the creativity in coding touches even the console, which isn't something I would have originally thought could use CSS. I'm always looking for ways to improve my debugging experience. Not only is it just an incredibly important tool, but it can be one of the most fun aspects of programming (as long as there's a light at the end of the tunnel!). This article was beneficial, though I wish there was slightly more explanation.
+While I don't think I'm going to be adding CSS to my console, I love that the creativity in coding touches even the console, which isn't something I would have originally thought could use CSS. I'm always looking for ways to improve my debugging experience. Not only is it just an incredibly important tool, but it can be one of the most fun aspects of programming (as long as there's a light at the end of the tunnel!). This article was beneficial, though I wish there was slightly more explanation that went further.
 
 
 
