@@ -1,4 +1,4 @@
-string=sudo cat /etc/passwd | cut -d " " -f1| sort | uniq -c | sort -rn | head
+string=sudo cat /etc/passwd | cut -d: -f1,6
 echo "${string}" | md5sum >> /var/log/current_users
 old=$(cat /var/log/current_users)
 new=$(cat /etc/passwd|md5sum)
