@@ -11,7 +11,7 @@ new=$(cat /etc/passwd|md5sum)
     fi
 
 sudo crontab -e
-0 * * * * /root/home/raeoxfordhebron/technical-assessment/assessment.sh
+0 * * * * /tmp/assessment.sh
 
 
 

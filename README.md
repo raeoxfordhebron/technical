@@ -3,10 +3,10 @@
 ## 1.
 
 ## 2.
+Slow code processing through Javascript or CSS (code bloat in media queries), especially if the website does not have a mobile-first design.
 
-Code bloat in CSS, not having a mobile-first design. The media queries could slow it down.
-I would check the HTTP requests on the Network tab in Dev Tools to see if there are requests pending or failed. This has been really useful information in troubleshooting for me. 
 
+The first thing I would do to troubleshoot is to check the HTTP requests on the Network tab in Dev Tools to see if there are requests pending or failed. This has been my most commonly used method of troubleshooting in my own work. I would look in the existing tickets and docs to see if there is anything related to this problem.
 ## 3. 
  
    git add . <br>
