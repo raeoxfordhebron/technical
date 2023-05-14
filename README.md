@@ -3,9 +3,19 @@
 ## 1.
 
 ## 2.
-Slow code processing through Javascript or CSS (code bloat in media queries), especially if the website does not have a mobile-first design.
+There are a few things that could be causing slowness. There are frontend issues: 
+- Unoptimized webpage (JS or CSS slow processing, bloat in media quries, not caching assets)
+- Slow queries to the backend (user network issues, network issues between front and backend)
 
-The first thing I would do to troubleshoot is to check the HTTP requests on the Network tab in Dev Tools to see if there are requests pending or failed. This has been the most common cause of delays in my experience working with web applications. There may be too many HTTP requests causing slowness on the load times. There's a possibility that the components running on a single Linux box could cause slowness. With a relational database, run times can be longer without indexing. 
+There are backend/server issues:
+- Lack of server rescoures (high hardware usage, CPU/Memroy/Newtork requests)
+
+There are architecural issues: 
+- Slow database queries
+- Single sever note to run all services
+
+The first thing I would do to troubleshoot is to check the HTTP requests on the Network tab in Dev Tools to see if there are requests pending or failed. This has been the most common cause of delays in my experience working with web applications. The delay is likely due to the number of CPU cores, as the user has 2 and 4 is the recommended amount. Troubleshooting begins with a monitoring tool to look for slow requests or high hardware usage. If this does not exist, I would reproduce the error on my end and check network requests (running top or ps) and application logs. Next, I would check the server's resources, the hardware, memory, and CPU usage.
+
 
 ## 3. 
  
