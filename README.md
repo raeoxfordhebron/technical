@@ -12,7 +12,7 @@ There are backend/server issues:
 
 There are architecural issues: 
 - Slow database queries
-- Single sever note to run all services
+- Single sever node to run all services
 
  The first thing I would do to troubleshoot is to check the HTTP requests on the Network tab in Dev Tools to see if there are requests pending or failed. This has been the most common cause of delays in my experience working with web applications. If a monitoring tool does not exist, I would reproduce the error on my end and check network requests (running top or ps) and application logs. Next, I would check the server's resources, the hardware, memory, and CPU usage. The delay is likely due to the number of CPU cores, as the user has 2 and 4 is the recommended amount.
 
