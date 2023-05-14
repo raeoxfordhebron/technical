@@ -8,7 +8,7 @@ There are a few things that could be causing slowness. There are frontend issues
 - Slow queries to the backend (user network issues, network issues between front and backend)
 
 There are backend/server issues:
-- Lack of server rescoures (high hardware usage, CPU/Memroy/Newtork requests)
+- Lack of server rescoures (high hardware usage, CPU/Memory/Network requests)
 
 There are architecural issues: 
 - Slow database queries
