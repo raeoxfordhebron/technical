@@ -1,6 +1,24 @@
 # Technical Assessment
 
 ## 1.
+string=sudo cat /etc/passwd | cut -d: -f1,6
+echo "${string}" | md5sum >> /var/log/current_users
+old=$(cat /var/log/current_users)
+new=$(cat /etc/passwd | cut -d: -f1,6 | md5sum)
+
+    if [[ $new != $old ]]
+    then
+       echo "$(date +'%D-%T') changes occured" >> /var/log/user_changes
+    else
+        echo "There are no changes"
+    fi
+
+sudo crontab -e
+0 * * * * /usr/bin/assessment.sh
+
+
+https://www.geeksforgeeks.org/cut-command-linux-examples/
+https://askubuntu.com/questions/419548/how-to-set-up-a-root-cron-job-properly
 
 ## 2.
 There are a few things that could be causing slowness. There are frontend issues: 
@@ -14,7 +32,7 @@ There are architecural issues:
 - Slow database queries
 - Single sever node to run all services
 
- The first thing I would do to troubleshoot is to check the HTTP requests on the Network tab in Dev Tools to see if there are requests pending or failed. This has been the most common cause of delays in my experience working with web applications. If a monitoring tool does not exist, I would reproduce the error on my end and check network requests (running top or ps) and application logs. Next, I would check the server's resources, the hardware, memory, and CPU usage. The delay is likely due to the number of CPU cores, as the user has 2 and 4 is the recommended amount.
+ The first thing I would do to troubleshoot is to check the HTTP requests on the Network tab in Dev Tools to see if there are requests pending or failed. This has been the most common cause of delays in my experience working with web applications. If a monitoring tool does not exist, I would reproduce the error on my end and check network requests (netstat) and resource usage (running top or ps). Next, I would check the server's resources, the hardware, memory, and CPU usage. 
 
 
 ## 3. 
